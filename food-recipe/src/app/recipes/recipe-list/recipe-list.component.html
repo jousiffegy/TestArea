@@ -9,11 +9,11 @@
     <div class="col-md-12">
           <a href="#" class="list-group-item clearfix"
           *ngFor="let recipe of recipies">
-              <div class="pull-left">
+              <div class="col-md-6 pull-left">
                   <h4 class="list-group-item-heading">{{recipe.name}}</h4>
                   <p class="list-group-item-text">{{ recipe.description }} </p>
               </div>
-              <span class="pull-right">
+              <span class="col-md-6 pull-right">
                   <img [src]="recipe.imgPath" alt="{{recipe.name}}"
                    class="img-responsive" style="max-height: 50px;">
               </span>
