@@ -1,5 +1,4 @@
-import { Component, Output } from '@angular/core';
-import { EventEmitter } from '../../../node_modules/protractor';
+import { Component} from '@angular/core';
 
 @Component({
     selector:'app-header',
@@ -7,10 +6,6 @@ import { EventEmitter } from '../../../node_modules/protractor';
 })
 
 export class HeaderComponent{
-   @Output() featureSelected=new EventEmitter();
-    
-    onSelect(feature:string){
-        this.featureSelected.emit(feature);
-    }
+   
 
 }
