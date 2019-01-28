@@ -9,7 +9,9 @@
     <div class="col-md-12">
          
 
-            <app-recipe-item *ngFor="let recipe of recipies" [recipe]="recipe"></app-recipe-item>
+            <app-recipe-item *ngFor="let recipe of recipies" 
+            [recipe]="recipe"
+            (recipeSelected)="onRecipeSelected()"></app-recipe-item>
     </div>
 </div>
 
