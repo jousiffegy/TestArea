@@ -23,5 +23,9 @@ private subscription:Subscription;
   ngOnDestroy(){
     this.subscription.unsubscribe();
   }
+  onEditItem(itemIndex:number){
+
+    
+  }
 
 }
